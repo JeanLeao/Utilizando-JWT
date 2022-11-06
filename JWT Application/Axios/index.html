@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="email" id="email" value="jeanc@gmail.com"><br>
+    <input type="text" name="password" id="password" value="3499"><br>
+    <button onclick="entrar()">Entrar</button>
+
+    <hr>
+    <h4>Lista De Games</h4>
+    <ul id="games"></ul>
+    <br>
+    <hr>
+    <h4>Novo game</h4>
+    <input type="text" name="title" id="title" placeholder="titulo"><br>
+    <input type="number" name="year" id="year" placeholder="ano"><br>
+    <input type="number" name="price" id="price" placeholder="preço"><br>
+    <button type="button" onclick="createGame()">Criar </button>
+    <br>
+    <hr>
+    <h4>Editar game</h4>
+    <input type="number" name="idEdit" id="idEdit" placeholder="ID"><br>
+    <input type="text" name="titleEdit" id="titleEdit" placeholder="titulo"><br>
+    <input type="number" name="yearEdit" id="yearEdit" placeholder="ano"><br>
+    <input type="number" name="priceEdit" id="priceEdit" placeholder="preço"><br>
+    <button type="button" onclick="UpdateClick()">Editar </button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="axios.js"></script>
+</html>
